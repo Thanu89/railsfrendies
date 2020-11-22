@@ -1,0 +1,2 @@
+module FriendDBsHelper
+end

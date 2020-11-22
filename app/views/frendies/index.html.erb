@@ -1,0 +1,42 @@
+<% if user_signed_in?%>
+
+<table class="table table-striped table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Twitter</th>
+      <th>User ID</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @frendies.each do |frendy| %>
+      <% if frendy.user == current_user %>
+      <tr>
+        <td><%= link_to frendy.first_name + " " + frendy.last_name, frendy %></td>
+        <td><%= frendy.email %></td>
+        <td><%= frendy.phone %></td>
+        <td><%= frendy.twitter %></td>
+        <td><%= frendy.user_id %></td>
+        <td><%= link_to 'Delete', frendy, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
+      </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Frendy', new_frendy_path, class:"btn btn-outline-secondary" %>
+
+<% else %>
+
+<h1>Home#index</h1>
+<p>My first webpage!</p>
+
+
+
+<% end %>

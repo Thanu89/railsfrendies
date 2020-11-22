@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h1 class="display-4"> <%= @frendy.first_name %> <%= @frendy.last_name %> </h1>
+  <p class="lead">
+    <%= @frendy.email %> |
+    <%= @frendy.phone %> |
+    <%= @frendy.twitter %>
+  </p>
+  <br/>
+  <hr class="my-4">
+  <%= link_to 'Edit', edit_frendy_path(@frendy), class:"btn btn-outline-secondary" %>
+  <%= link_to 'Back', frendies_path, class:"btn btn-outline-secondary" %>
+</div>
+
+
