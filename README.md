@@ -1,24 +1,13 @@
-# README
+# FRIENDS LIST APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello my name is Thanu Yogarajan and I am a student at the University of Surrey.
 
-Things you may want to cover:
+This is my Ruby on Rails Friends List App.
 
-* Ruby version
+Software Versions:
 
-* System dependencies
+* Ruby version 2.7.2
 
-* Configuration
+* Ruby on Rails version 5.2.1
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Created and ran on a Windows machine
